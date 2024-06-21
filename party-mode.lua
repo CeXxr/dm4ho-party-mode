@@ -1,5 +1,5 @@
 while task.wait() do
-    if game:IsLoaded() == true then
+    if game.Loaded == true then
 local targetPlaceId = 17727262513
 
 if game.PlaceId ~= targetPlaceId then
