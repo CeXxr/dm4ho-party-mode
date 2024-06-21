@@ -1,5 +1,10 @@
-while task.wait() do
-    if game.Loaded == true then
+if not game:IsLoaded() then
+    game.Loaded:Wait()
+end
+repeat
+    task.wait()
+until game.Loaded and game.Players.LocalPlayer.Character and
+    game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
 local targetPlaceId = 17727262513
 
 if game.PlaceId ~= targetPlaceId then
@@ -46,5 +51,3 @@ local queuetp = queueonteleport or queue_on_teleport
 queuetp([[
     loadstring(game:HttpGet(("https://raw.githubusercontent.com/CeXxr/dm4ho-party-mode/main/party-mode.lua"),true))()
 ]])
-    end
-end
