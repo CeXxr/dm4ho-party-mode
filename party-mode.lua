@@ -1,3 +1,10 @@
+if not game:IsLoaded() then
+    game.Loaded:Wait()
+end
+repeat
+    task.wait()
+until game.Loaded
+
 local targetPlaceId = 17727262513
 
 if game.PlaceId ~= targetPlaceId then
