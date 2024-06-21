@@ -42,5 +42,6 @@ TweenTo(game.Workspace.LevelFolder[10].SavePoint.SpawnLocation.CFrame + Vector3.
 local queuetp = queueonteleport or queue_on_teleport
 
 queuetp([[
+    wait(10)
     loadstring(game:HttpGet(("https://raw.githubusercontent.com/CeXxr/dm4ho-party-mode/main/party-mode.lua"),true))()
 ]])
