@@ -1,11 +1,3 @@
-if not game:IsLoaded() then
-    game.Loaded:Wait()
-end
-repeat
-    task.wait()
-until game.Loaded and game.Players.LocalPlayer.Character and
-    game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
-
 local targetPlaceId = 17727262513
 
 if game.PlaceId ~= targetPlaceId then
